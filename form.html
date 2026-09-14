@@ -1,94 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
     <title>Form Pendaftaran Akun</title>
 </head>
 <body>
 
-    <table border="1" cellpadding="6" cellspacing="0" width="100%">
-    <tr>
-        <td align="center"><a href="../IMDB.Charts/index.html">IMDb</a></td>
-        <td align="center"><a href="../DevBlogs/blog.html">Dev Blogs</a></td>
-        <td align="center"><a href="form.html">Form Pendaftaran</a></td>
-        <td align="center"><a href="../CurriculumVitae/cv.html">CV</a></td>
-    </tr>
-    </table>
+    <header>
+        <table border="1" cellpadding="6" cellspacing="0" width="100%">
+            <tr>
+                <td align="center"><a href="../IMDB.Charts/index.html">IMDb</a></td>
+                <td align="center"><a href="../DevBlogs/blog.html">Dev Blogs</a></td>
+                <td align="center"><a href="form.html">Form Pendaftaran</a></td>
+                <td align="center"><a href="../CurriculumVitae/cv.html">CV</a></td>
+            </tr>
+        </table>
+    </header>
 
-    <br>
+    <main>
 
-    <fieldset>
-        <legend>Daftar Akun</legend>
+        <h1>Form Pendaftaran Akun</h1>
 
-        <form onsubmit="return false;">
-            <p>
-                Nama Lengkap: <input type="text" name="nama">
-            </p>
+        <fieldset>
+            <legend>Daftar Akun</legend>
 
-            <hr>
+            <form onsubmit="return false;">
+                <p>
+                    <label>Nama Lengkap: <input type="text" name="nama"></label>
+                </p>
 
-            <p>
-                Jenis Kelamin:
-                <input type="radio" name="kelamin" value="laki-laki"> Laki-Laki
-                <input type="radio" name="kelamin" value="perempuan"> Perempuan
-            </p>
+                <hr>
 
-            <hr>
+                <p>
+                    Jenis Kelamin:
+                    <label><input type="radio" name="kelamin" value="laki-laki"> Laki-Laki</label>
+                    <label><input type="radio" name="kelamin" value="perempuan"> Perempuan</label>
+                </p>
 
-            <p>
-                Tempat Lahir: <input type="text" name="tempat_lahir">
-            </p>
+                <hr>
 
-            <hr>
+                <p>
+                    <label>Tempat Lahir: <input type="text" name="tempat_lahir"></label>
+                </p>
 
-            <p>
-                Tanggal Lahir: <input type="date" name="tanggal_lahir">
-            </p>
+                <hr>
 
-            <hr>
+                <p>
+                    <label>Tanggal Lahir: <input type="date" name="tanggal_lahir"></label>
+                </p>
 
-            <p>
-                Agama:
-                <select name="agama">
-                    <option value="">--- Pilih Agama ---</option>
-                    <option value="islam">Islam</option>
-                    <option value="katolik">Katolik</option>
-                    <option value="protestan">Protestan</option>
-                    <option value="hindu">Hindu</option>
-                    <option value="buddha">Buddha</option>
-                    <option value="konghucu">Konghucu</option>
-                </select>
-            </p>
+                <hr>
 
-            <hr>
+                <p>
+                    <label>
+                        Agama:
+                        <select name="agama">
+                            <option value="">--- Pilih Agama ---</option>
+                            <option value="islam">Islam</option>
+                            <option value="katolik">Katolik</option>
+                            <option value="protestan">Protestan</option>
+                            <option value="hindu">Hindu</option>
+                            <option value="buddha">Buddha</option>
+                            <option value="konghucu">Konghucu</option>
+                        </select>
+                    </label>
+                </p>
 
-            <p>
-                Hobi:
-                <input type="checkbox" name="hobi" value="olahraga"> Olahraga
-                <input type="checkbox" name="hobi" value="membaca"> Membaca
-                <input type="checkbox" name="hobi" value="ngoding"> Ngoding
-            </p>
+                <hr>
 
-            <hr>
+                <p>
+                    Hobi:
+                    <label><input type="checkbox" name="hobi" value="olahraga"> Olahraga</label>
+                    <label><input type="checkbox" name="hobi" value="membaca"> Membaca</label>
+                    <label><input type="checkbox" name="hobi" value="ngoding"> Ngoding</label>
+                </p>
 
-            <p>
-                Password: <input type="password" name="password">
-            </p>
+                <hr>
 
-            <hr>
+                <p>
+                    <label>Password: <input type="password" name="password"></label>
+                </p>
 
-            <p>
-                <input type="checkbox" name="setuju" value="ya">
-                Dengan mendaftar saya setuju dengan Ketentuan dan Kebijakan Privasi Aplikasi.
-            </p>
+                <hr>
 
-            <hr>
+                <p>
+                    <label>
+                        <input type="checkbox" name="setuju" value="ya">
+                        Dengan mendaftar saya setuju dengan Ketentuan dan Kebijakan Privasi Aplikasi.
+                    </label>
+                </p>
 
-            <p>
-                <input type="reset" value="Reset">
-                <input type="submit" value="Submit">
-            </p>
-        </form>
-    </fieldset>
+                <hr>
+
+                <p>
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                </p>
+            </form>
+        </fieldset>
+
+    </main>
 
 </body>
 </html>
